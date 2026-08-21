@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "date": "2026-08-21",
+    "dateDisplay": "Friday, August 21, 2026",
+    "location": "NORTH ALABAMA",
+    "weather": "THE MORNING EDITION",
+    "historyDateDisplay": "August 21 through the centuries"
+  },
+  "sports": {
+    "braves": {
+      "stories": [
+        {
+          "team": "Atlanta Braves",
+          "tag": "MLB · August 20",
+          "headline": "Braves shut out White Sox, 2–0",
+          "score": "ATL 2 · CWS 0",
+          "body": "Grant Holmes carried a no-hit bid into the seventh inning before allowing a single. Austin Riley drove in both Atlanta runs.",
+          "source": "Reuters",
+          "url": "https://www.reuters.com/"
+        }
+      ]
+    },
+    "trash_pandas": {
+      "stories": [
+        {
+          "team": "Rocket City Trash Pandas",
+          "tag": "MiLB · August 20",
+          "headline": "Trash Pandas continue series with Biloxi",
+          "body": "Rocket City hosted Biloxi at Toyota Field. The production system will use official Minor League Baseball results and box scores for the final edition.",
+          "source": "Minor League Baseball",
+          "url": "https://www.milb.com/"
+        }
+      ]
+    },
+    "auburn": {
+      "stories": [
+        {
+          "team": "Auburn Tigers",
+          "tag": "Off-season / preseason",
+          "headline": "Auburn coverage shifts toward preseason developments",
+          "body": "No regular-season football, basketball or baseball game was played yesterday. Meaningful Auburn developments remain in coverage during the off-season.",
+          "source": "Auburn Athletics",
+          "url": "https://auburntigers.com/"
+        }
+      ]
+    },
+    "texas_tech": {
+      "stories": [
+        {
+          "team": "Texas Tech Red Raiders",
+          "tag": "Off-season / preseason",
+          "headline": "No regular-season game yesterday",
+          "body": "The Coleman Times will track significant football, basketball and baseball developments during the off-season and preseason.",
+          "source": "Texas Tech Athletics",
+          "url": "https://texastech.com/"
+        }
+      ]
+    },
+    "havoc": {
+      "stories": [
+        {
+          "team": "Huntsville Havoc",
+          "tag": "SPHL · Off-season",
+          "headline": "No game yesterday",
+          "body": "No game was played yesterday. Major roster, league or organizational developments will still be covered during the off-season.",
+          "source": "Huntsville Havoc",
+          "url": "https://www.huntsvillehavoc.com/"
+        }
+      ]
+    }
+  },
+  "politics": [
+    {
+      "bias": "Neutral",
+      "tag": "Defense · Ukraine",
+      "headline": "Ukraine's air-defense challenge remains a major strategic problem",
+      "body": "Russia launched another large combined missile-and-drone attack against Ukraine. Ukrainian forces intercepted many incoming systems, but ballistic missiles remain particularly difficult to defeat.",
+      "source": "Institute for the Study of War / Critical Threats",
+      "url": "https://www.criticalthreats.org/"
+    },
+    {
+      "bias": "Neutral",
+      "tag": "Defense · Taiwan",
+      "headline": "Taiwan proposes record defense spending",
+      "body": "Taiwan's cabinet proposed an 18% increase in 2027 defense spending, emphasizing missiles, drones, submarines and other asymmetric capabilities.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/"
+    },
+    {
+      "bias": "Neutral",
+      "tag": "North Alabama",
+      "headline": "Auburn's Huntsville research institute expands the local defense and space research ecosystem",
+      "body": "Auburn's Applied Research Institute in Cummings Research Park is working on areas including space-radiation effects and advanced manufacturing.",
+      "source": "Axios",
+      "url": "https://www.axios.com/"
+    }
+  ],
+  "science": [
+    {
+      "tag": "Materials · AI",
+      "headline": "Machine learning connects architected-material geometry to thermo-mechanical properties",
+      "body": "New work on triply periodic minimal-surface architected materials uses geometric descriptors to predict properties including stiffness, strength and thermal conductivity. The engineering question is whether this can accelerate geometry optimization without replacing physical understanding.",
+      "source": "Nature",
+      "url": "https://www.nature.com/"
+    },
+    {
+      "tag": "Aerospace · Materials",
+      "headline": "Si₃N₄ fiber composites are being investigated for high-temperature wave-transparent structures",
+      "body": "Research into silicon-nitride fiber-reinforced composites targets demanding combinations of mechanical performance, thermal stability and electromagnetic transparency.",
+      "source": "Technical reporting",
+      "url": "https://www.miragenews.com/"
+    },
+    {
+      "tag": "Computational mechanics",
+      "headline": "High-order virtual-element methods target difficult variable-stiffness plate problems",
+      "body": "Recent work explores p-version Virtual Element Methods for variable-stiffness plates with complex geometries and cutouts.",
+      "source": "arXiv",
+      "url": "https://arxiv.org/"
+    }
+  ],
+  "exploration": [
+    {
+      "tag": "Space · ISS",
+      "headline": "ISS crew prepares for another spacewalk",
+      "body": "Astronauts are preparing to finish replacing a space-to-ground communications antenna while continuing research aboard the station, including work related to space manufacturing.",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/"
+    },
+    {
+      "tag": "Spacecraft servicing",
+      "headline": "Swift servicing mission changes objectives after spacecraft issue",
+      "body": "A commercial mission intended to boost NASA's Swift Observatory changed plans after an attitude-control problem. The spacecraft will instead demonstrate rendezvous and proximity operations.",
+      "source": "NASA",
+      "url": "https://www.nasa.gov/"
+    }
+  ],
+  "history": [
+    {
+      "year": "1965",
+      "tag": "SPACEFLIGHT",
+      "body": "Gemini 5 launched with Gordon Cooper and Charles Conrad. The nearly eight-day mission demonstrated the feasibility of long-duration human spaceflight needed for future lunar missions."
+    },
+    {
+      "year": "1993",
+      "tag": "MARS EXPLORATION",
+      "body": "NASA lost communication with Mars Observer shortly before its planned Mars orbit insertion, a classic reminder that spacecraft missions can fail at the system level even when individual components appear capable."
+    },
+    {
+      "year": "1959",
+      "tag": "UNITED STATES",
+      "body": "Hawaii became the 50th U.S. state."
+    },
+    {
+      "year": "1911",
+      "tag": "CULTURE",
+      "body": "The Mona Lisa was stolen from the Louvre. Its recovery two years later helped turn the painting into an even greater global cultural icon."
+    },
+    {
+      "year": "1918",
+      "tag": "MILITARY AVIATION",
+      "body": "U.S. Navy pilot Charles Hammann rescued a fellow pilot after a World War I seaplane incident near Pola, an action that later earned him the Medal of Honor."
+    }
+  ],
+  "diversions": {
+    "comic": {
+      "title": "The Cader Vane Files",
+      "subtitle": "Original Coleman Times strip",
+      "image": "",
+      "alt": "Cader Vane comic"
+    },
+    "jokes": [
+      "I told my computer I needed a break. Now it won't stop sending me ads for vacations.",
+      "My structural engineer friend is very dependable. He has excellent support.",
+      "A thermodynamicist walks into a bar. The bartender asks what he'll have. He says, 'Eventually, we'll both end up at equilibrium.'"
+    ],
+    "puzzle": {
+      "title": "The Broken Beam",
+      "question": "A simply supported 24-inch beam has a 1,200-lb center load, a 2 × 1-inch rectangular section, and a material yield strength of 60 ksi. The nominal maximum bending stress is 54 ksi, yet the beam fails at the center. What is the most important thing to establish before concluding that the material simply failed because the applied stress exceeded its strength?",
+      "answer": "Establish whether the actual local stress state and actual geometry match the nominal calculation. Check the real cross section, load alignment, stress concentrations, defects, residual stress, material orientation, shear effects and the actual failure mode. A nominal stress below yield does not prove that the local failure-driving stress was below the material's relevant strength."
+    }
+  }
+}
