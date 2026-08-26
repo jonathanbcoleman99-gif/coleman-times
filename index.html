@@ -285,7 +285,6 @@
     color:var(--ink-soft); letter-spacing:.05em;
   }
 </style>
-
 <style>
 .template-status{
   max-width:1100px;
@@ -308,6 +307,20 @@
   border:1px solid var(--rule);
 }
 </style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+.masthead h1,.site-title,.logo,.masthead .title{font-family:"UnifrakturCook","UnifrakturMaguntia","Old English Text MT","Cloister Black",serif!important;font-weight:700;letter-spacing:.01em;font-size:clamp(42px,7vw,72px);line-height:1.05}
+.source-link{margin-top:.4rem;font-family:"IBM Plex Mono",monospace;font-size:.72rem}.source-link a{text-decoration:underline;text-underline-offset:2px}.source-missing{margin-top:.4rem;color:var(--ink-soft);font-family:"IBM Plex Mono",monospace;font-size:.68rem}
+.sports-grid{display:grid;grid-template-columns:1fr;gap:22px}.sport-team{border-top:1px solid var(--rule);padding-top:16px}.sport-team-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}.sport-team-head h3{margin:0}.sport-subsection{margin-top:16px}.record,.game-status{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--ink-soft)}.sports-game{margin:12px 0 18px;padding:14px;background:var(--paper-alt);border:1px solid var(--rule)}.game-title{font-family:"IBM Plex Mono",monospace;margin-bottom:12px}.table-wrap{overflow-x:auto;margin:8px 0 14px}.table-wrap table{width:100%;border-collapse:collapse;font-size:12px}.table-wrap th,.table-wrap td{padding:6px 7px;border-bottom:1px solid var(--rule);text-align:right;white-space:nowrap}.table-wrap th:first-child,.table-wrap td:first-child{text-align:left}.sports-game h4,.sport-subsection h4{margin:12px 0 5px}.offseason{padding:12px 14px;border-left:3px solid var(--ink);background:var(--paper-alt);margin:10px 0 16px}.offseason strong{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.05em}.puzzle-card{border-top:1px solid var(--rule);padding:1rem 0 1.15rem}.puzzle-label{font-family:"IBM Plex Mono",monospace;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}.puzzle-card details{margin-top:.75rem;border-top:1px dotted var(--rule);padding-top:.65rem}.puzzle-card summary{cursor:pointer;font-family:"IBM Plex Mono",monospace;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}.puzzle-answer{margin-top:.65rem}.cader-image{display:block;width:100%;height:auto;border:1px solid var(--rule)}
+@media(min-width:800px){.sports-grid{grid-template-columns:1fr 1fr}}
+</style>
+<style>
+section[id]{scroll-margin-top:72px;}
+nav.sections button.active{background:var(--brass);color:var(--navy-deep);}
+.demo-boxscore{margin:18px 0 22px;padding:16px;border:2px solid var(--ink);background:#f6f0e2;}
+.demo-boxscore h3{margin:0 0 8px;font-family:"Playfair Display",Georgia,serif;}
+.demo-boxscore .demo-note{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--ink-soft);margin-bottom:12px;}
+</style>
 </head>
 <body>
 <div class="masthead">
@@ -321,16 +334,30 @@
 </div>
 </div><div class="template-status">LIVE DESIGN PREVIEW · The daily research pipeline will replace this preview content automatically.</div>
 <nav class="sections">
-<button data-target="sports">Sports</button>
-<button data-target="politics">Politics &amp; Defense</button>
-<button data-target="science">Science</button>
-<button data-target="exploration">Exploration</button>
-<button data-target="history">History</button>
-<button data-target="diversions">Diversions</button>
+<button type="button" data-target="sports" onclick="document.getElementById('sports').scrollIntoView({behavior:'smooth',block:'start'}); return false;">Sports</button>
+<button type="button" data-target="politics" onclick="document.getElementById('politics').scrollIntoView({behavior:'smooth',block:'start'}); return false;">Politics &amp; Defense</button>
+<button type="button" data-target="science" onclick="document.getElementById('science').scrollIntoView({behavior:'smooth',block:'start'}); return false;">Science</button>
+<button type="button" data-target="exploration" onclick="document.getElementById('exploration').scrollIntoView({behavior:'smooth',block:'start'}); return false;">Exploration</button>
+<button type="button" data-target="history" onclick="document.getElementById('history').scrollIntoView({behavior:'smooth',block:'start'}); return false;">History</button>
+<button type="button" data-target="diversions" onclick="document.getElementById('diversions').scrollIntoView({behavior:'smooth',block:'start'}); return false;">Diversions</button>
 </nav>
 <div class="wrap">
 <!-- ============ SPORTS ============ -->
-<section id="sports">
+<section id="sports"><div class="demo-boxscore" id="demo-boxscore">
+  <h3>Example Box Score — Data Feed Preview</h3>
+  <div class="demo-note">This is a structural preview. The daily automated edition will replace it with the actual previous-day game(s).</div>
+  <div class="game-title"><strong>Atlanta Braves</strong> 6 &nbsp;—&nbsp; <strong>New York Mets</strong> 4 &nbsp; <span class="game-status">FINAL</span></div>
+  <div class="table-wrap"><table><thead><tr><th>Team</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>R</th><th>H</th><th>E</th></tr></thead>
+  <tbody><tr><td>Atlanta</td><td>0</td><td>1</td><td>2</td><td>0</td><td>1</td><td>0</td><td>2</td><td>0</td><td>0</td><td>6</td><td>10</td><td>0</td></tr>
+  <tr><td>New York</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>2</td><td>0</td><td>1</td><td>0</td><td>4</td><td>8</td><td>1</td></tr></tbody></table></div>
+  <h4>Batting</h4>
+  <div class="table-wrap"><table><thead><tr><th>Player</th><th>AB</th><th>R</th><th>H</th><th>RBI</th><th>BB</th><th>SO</th></tr></thead>
+  <tbody><tr><td>Example Player</td><td>4</td><td>2</td><td>3</td><td>2</td><td>1</td><td>0</td></tr>
+  <tr><td>Example Player</td><td>4</td><td>1</td><td>2</td><td>1</td><td>0</td><td>1</td></tr></tbody></table></div>
+  <h4>Pitching</h4>
+  <div class="table-wrap"><table><thead><tr><th>Pitcher</th><th>IP</th><th>H</th><th>R</th><th>ER</th><th>BB</th><th>SO</th></tr></thead>
+  <tbody><tr><td>Example Pitcher</td><td>6.0</td><td>5</td><td>2</td><td>2</td><td>2</td><td>7</td></tr></tbody></table></div>
+</div>
 <div class="sec-head"><span class="sec-num">I</span><h2>Sports</h2><span class="sec-sub">Your five clubs, box scores &amp; the standings behind them</span></div>
 <div class="story">
 <div class="meta"><span class="pill team-pill">Atlanta Braves</span><span class="score">Final: TWINS 6, BRAVES 4</span><span>@ Target Field, Minneapolis</span></div>
@@ -546,144 +573,45 @@
   Assembled on request · No ads, no tracking, just the news you asked for · The Rocket City Dispatch
 </footer>
 <script>
-  document.querySelectorAll('nav.sections button').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      var target = document.getElementById(btn.getAttribute('data-target'));
-      if(target){ target.scrollIntoView({behavior:'smooth', block:'start'}); }
+  document.querySelectorAll('nav.sections button[data-target]').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      var id = btn.getAttribute('data-target');
+      var target = document.getElementById(id);
+      if(target){
+        document.querySelectorAll('nav.sections button').forEach(function(b){b.classList.remove('active');});
+        btn.classList.add('active');
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        history.replaceState(null,'','#'+id);
+      }
     });
   });
+  if(location.hash){
+    var initial=document.getElementById(location.hash.slice(1));
+    if(initial) setTimeout(function(){initial.scrollIntoView({behavior:'auto',block:'start'});},50);
+  }
   document.getElementById('backToTop').addEventListener('click', function(){
     window.scrollTo({top:0, behavior:'smooth'});
   });
 </script>
 
 <script>
-/*
-  THE COLEMAN TIMES — DATA LOADER
-
-  The visual design is intentionally kept separate from the daily content.
-  The automation pipeline will publish:
-      editions/latest.json
-      images/cader/YYYY-MM-DD.jpg
-
-  When latest.json exists, this page can be populated from it.
-  Until then, the original Claude-designed preview remains visible.
-*/
-(function () {
-  const DATA_URL = 'editions/latest.json';
-
-  function esc(value) {
-    return String(value ?? '').replace(/[&<>"']/g, ch => ({
-      '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;'
-    }[ch]));
-  }
-
-  function storyHTML(s, type='story') {
-    const meta = [];
-    if (s.team) meta.push(`<span class="pill team-pill">${esc(s.team)}</span>`);
-    if (s.bias) meta.push(`<span class="pill bias bias-${({ 'Neutral':'n','Liberal':'l','Considerably Liberal':'l','Conservative':'c','Considerably Conservative':'c' }[s.bias] || 'n')}">${esc(s.bias)}</span>`);
-    if (s.tag) meta.push(`<span>${esc(s.tag)}</span>`);
-    if (s.score) meta.push(`<span class="score">${esc(s.score)}</span>`);
-    const source = s.source ? `<div class="src">Source: <a href="${esc(s.url || '#')}" target="_blank" rel="noopener">${esc(s.source)}</a></div>` : '';
-    return `<article class="story">
-      ${meta.length ? `<div class="meta">${meta.join('')}</div>` : ''}
-      <h3>${esc(s.headline || '')}</h3>
-      ${s.body ? `<p>${s.body}</p>` : ''}
-      ${source}
-    </article>`;
-  }
-
-  function sectionHTML(id, number, title, subtitle, stories) {
-    const sec = document.getElementById(id);
-    if (!sec || !Array.isArray(stories)) return;
-    sec.innerHTML = `
-      <div class="sec-head">
-        <span class="sec-num">${number}</span>
-        <h2>${esc(title)}</h2>
-        <span class="sec-sub">${esc(subtitle)}</span>
-      </div>
-      ${stories.map(s => storyHTML(s)).join('')}
-    `;
-  }
-
-  function render(data) {
-    if (!data) return;
-
-    if (data.meta) {
-      document.title = `The Coleman Times — ${data.meta.dateDisplay || data.meta.date || ''}`;
-      const spans = document.querySelectorAll('.dateline span');
-      if (spans[0]) spans[0].textContent = (data.meta.dateDisplay || data.meta.date || '').toUpperCase();
-      if (spans[1]) spans[1].textContent = data.meta.location || 'NORTH ALABAMA';
-      if (spans[2]) spans[2].textContent = data.meta.weather || 'THE MORNING EDITION';
-      const status = document.querySelector('.template-status');
-      if (status) status.textContent = `EDITION LIVE · ${data.meta.dateDisplay || data.meta.date || ''} · Freshly assembled`;
-    }
-
-    if (data.sports) {
-      const all = [];
-      for (const key of Object.keys(data.sports)) {
-        const group = data.sports[key];
-        if (Array.isArray(group)) all.push(...group);
-        else if (group && Array.isArray(group.stories)) all.push(...group.stories);
-      }
-      if (all.length) sectionHTML('sports', 'I', 'Sports', 'Your five clubs, box scores & the standings behind them', all);
-    }
-    if (Array.isArray(data.politics)) sectionHTML('politics', 'II', 'Politics & Defense', 'Cross-spectrum coverage, bias noted, sources linked', data.politics);
-    if (Array.isArray(data.science)) sectionHTML('science', 'III', 'Science & Engineering', 'AI, materials, structures, thermal analysis & failures worth studying', data.science);
-    if (Array.isArray(data.exploration)) sectionHTML('exploration', 'IV', 'Exploration', 'Off the map, off the grid, off the planet', data.exploration);
-
-    if (Array.isArray(data.history)) {
-      const sec = document.getElementById('history');
-      if (sec) {
-        sec.innerHTML = `
-          <div class="sec-head">
-            <span class="sec-num">V</span><h2>On This Day</h2>
-            <span class="sec-sub">${esc(data.meta?.historyDateDisplay || 'This date through the centuries')}</span>
-          </div>
-          <div class="timeline">
-            ${data.history.map(h => `<div class="tl-item">
-              <div class="tl-year">${esc(h.year || '')}${h.tag ? ' — ' + esc(h.tag) : ''}</div>
-              <p>${h.body || ''}</p>
-            </div>`).join('')}
-          </div>`;
-      }
-    }
-
-    // Cader Vane: use a generated image when the daily pipeline supplies one.
-    const comic = data.diversions?.comic;
-    const comicEl = document.querySelector('.comic');
-    if (comic && comicEl && comic.image) {
-      comicEl.innerHTML = `
-        <p class="comic-title">${esc(comic.title || 'The Cader Vane Files')}</p>
-        <p class="comic-sub">${esc(comic.subtitle || 'An original Coleman Times strip')}</p>
-        <img class="cader-image" src="${esc(comic.image)}" alt="${esc(comic.alt || 'Cader Vane comic')}">
-      `;
-    }
-
-    const divSec = document.getElementById('diversions');
-    if (divSec && data.diversions) {
-      const d = data.diversions;
-      let content = `<div class="sec-head"><span class="sec-num">VI</span><h2>Diversions</h2><span class="sec-sub">Cader Vane, jokes & one puzzle</span></div>`;
-      if (d.comic) {
-        content += `<div class="diversion-box"><h4>Cader Vane</h4><p><strong>${esc(d.comic.title || 'Today’s episode')}</strong></p></div>`;
-      }
-      if (Array.isArray(d.jokes)) {
-        content += `<div class="diversion-box"><h4>The Morning Three</h4>${d.jokes.map((j,i)=>`<p><strong>${i+1}.</strong> ${j}</p>`).join('')}</div>`;
-      }
-      if (d.puzzle) {
-        content += `<div class="diversion-box"><h4>${esc(d.puzzle.title || 'Today’s Puzzle')}</h4><p>${d.puzzle.question || ''}</p><details><summary>Reveal answer</summary><p>${d.puzzle.answer || ''}</p></details></div>`;
-      }
-      divSec.innerHTML = content;
-    }
-  }
-
-  fetch(DATA_URL, { cache: 'no-store' })
-    .then(r => r.ok ? r.json() : null)
-    .then(render)
-    .catch(() => {
-      // Keep the design preview visible if today's data has not been published.
-    });
+(function(){
+const DATA_URL='editions/latest.json';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function source(s){if(!s||!s.source)return'';if(s.url&&/^https?:\/\//i.test(s.url))return`<div class="source-link">Source: <a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.source)}</a></div>`;return`<div class="source-missing">Source: ${esc(s.source)} · article link unavailable</div>`}
+function table(h,r){if(!r?.length)return'';return`<div class="table-wrap"><table><thead><tr>${h.map(x=>`<th>${esc(x)}</th>`).join('')}</tr></thead><tbody>${r.map(a=>`<tr>${a.map(x=>`<td>${esc(x)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`}
+function story(s){return`<article class="story"><div class="meta">${s.team?`<span class="pill team-pill">${esc(s.team)}</span>`:''}${s.tag?`<span>${esc(s.tag)}</span>`:''}${s.bias?`<span class="pill">${esc(s.bias)}</span>`:''}</div><h3>${esc(s.headline||'')}</h3>${s.body?`<p>${s.body}</p>`:''}${s.score?`<p><strong>${esc(s.score)}</strong></p>`:''}${source(s)}</article>`}
+function game(g){if(!g)return'';let o=`<div class="sports-game"><div class="game-title"><strong>${esc(g.away||'')}</strong> ${esc(g.awayScore??'')} &nbsp;—&nbsp; <strong>${esc(g.home||'')}</strong> ${esc(g.homeScore??'')} ${g.status?`<span class="game-status">${esc(g.status)}</span>`:''}</div>`;if(g.linescore?.length)o+=table(['Team',...(g.linescoreHeaders||[]),'R','H','E'],g.linescore.map(x=>[x.team,...(x.innings||[]),x.runs,x.hits,x.errors]));if(g.batting?.length)o+=`<h4>Batting</h4>`+table(g.battingHeaders||['Player','AB','R','H','RBI','BB','SO'],g.batting);if(g.pitching?.length)o+=`<h4>Pitching</h4>`+table(g.pitchingHeaders||['Pitcher','IP','H','R','ER','BB','SO'],g.pitching);if(g.stats?.length)o+=`<h4>Game statistics</h4>`+table(g.statsHeaders||[],g.stats);if(g.keyPlays?.length)o+=`<h4>Key plays</h4><ul>${g.keyPlays.map(x=>`<li>${x}</li>`).join('')}</ul>`;return o+source(g)+'</div>'}
+function standings(s){if(!s?.rows?.length)return'';return`<div class="standings"><h4>${esc(s.title||'Complete league standings')}</h4>${s.note?`<p>${esc(s.note)}</p>`:''}${table(s.headers||['Team','W','L','PCT','GB'],s.rows)}${source(s)}</div>`}
+function team(t){let o=`<section class="sport-team"><div class="sport-team-head"><h3>${esc(t.name||'')}</h3>${t.record?`<span class="record">${esc(t.record)}</span>`:''}</div>`;if(t.sports?.length)t.sports.forEach(s=>{o+=`<div class="sport-subsection"><h4>${esc(s.name||'')}</h4>${s.record?`<p class="record">${esc(s.record)}</p>`:''}${s.games?.length?s.games.map(game).join(''):''}${!s.games?.length&&s.offSeason?`<div class="offseason"><strong>OFF-SEASON / BETWEEN GAMES</strong><p>${s.offSeasonNote||'No game yesterday. Meaningful developments are still monitored.'}</p></div>`:''}${s.stories?.length?s.stories.map(story).join(''):''}${s.standings?standings(s.standings):''}</div>`});else{if(t.games?.length)t.games.forEach(g=>o+=game(g));else if(t.offSeason)o+=`<div class="offseason"><strong>OFF-SEASON / BETWEEN GAMES</strong><p>${t.offSeasonNote||'No game yesterday. Meaningful developments are still monitored.'}</p></div>`;if(t.stories?.length)t.stories.forEach(s=>o+=story({...s,team:t.name}));if(t.standings)o+=standings(t.standings)}return o+'</section>'}
+function sports(d){const sec=document.getElementById('sports');if(!sec||!d)return;const ts=[];Object.keys(d).forEach(k=>{const v=d[k];if(v?.name)ts.push(v);else if(Array.isArray(v))v.forEach(x=>x?.name&&ts.push(x));else if(v?.stories){const f=v.stories[0]||{};ts.push({name:f.team||k,stories:v.stories})}});if(!ts.length)return;const demo=document.getElementById('demo-boxscore'); if(demo) demo.remove(); sec.innerHTML=`<div class="sec-head"><span class="sec-num">I</span><h2>Sports</h2><span class="sec-sub">Scores, full box scores, records & complete league standings</span></div><div class="sports-grid">${ts.map(team).join('')}</div>`}
+function section(id,n,t,sub,a){const sec=document.getElementById(id);if(!sec||!Array.isArray(a)||!a.length)return;sec.innerHTML=`<div class="sec-head"><span class="sec-num">${n}</span><h2>${esc(t)}</h2><span class="sec-sub">${esc(sub)}</span></div>${a.map(story).join('')}`}
+function history(a,m){const sec=document.getElementById('history');if(!sec||!a?.length)return;sec.innerHTML=`<div class="sec-head"><span class="sec-num">V</span><h2>On This Day</h2><span class="sec-sub">${esc(m?.historyDateDisplay||'')}</span></div><div class="timeline">${a.map(h=>`<div class="tl-item"><div class="tl-year">${esc(h.year||'')}${h.tag?' — '+esc(h.tag):''}</div><p>${h.body||''}</p>${source(h)}</div>`).join('')}</div>`}
+function puzzle(p){return`<article class="puzzle-card"><div class="puzzle-label">${esc(p.label||'Puzzle')}</div><h3>${esc(p.title||'')}</h3><p>${p.question||''}</p><details><summary>Reveal the answer</summary><div class="puzzle-answer">${p.answer||''}</div></details>${source(p)}</article>`}
+function diversions(d){const sec=document.getElementById('diversions');if(!sec||!d)return;let o=`<div class="sec-head"><span class="sec-num">VI</span><h2>Diversions</h2><span class="sec-sub">Cader Vane, jokes & the Puzzle Desk</span></div>`;if(d.comic)o+=`<div class="diversion-box"><h4>${esc(d.comic.title||'The Cader Vane Files')}</h4>${d.comic.image?`<img class="cader-image" src="${esc(d.comic.image)}" alt="${esc(d.comic.alt||'Cader Vane and Sophia Reyes')}">`:`<p>${esc(d.comic.subtitle||'Today’s original strip will appear here.')}</p>`}</div>`;if(d.jokes?.length)o+=`<div class="diversion-box"><h4>The Morning Jokes</h4>${d.jokes.map((j,i)=>`<p><strong>${i+1}.</strong> ${j}</p>`).join('')}</div>`;let ps=[];if(d.puzzle)ps.push(d.puzzle);if(Array.isArray(d.puzzles))ps.push(...d.puzzles);if(ps.length)o+=`<div class="diversion-box"><h4>The Puzzle Desk</h4>${ps.map(puzzle).join('')}</div>`;sec.innerHTML=o}
+function render(d){if(!d)return;if(d.meta){document.title=`The Coleman Times — ${d.meta.dateDisplay||''}`;const s=document.querySelectorAll('.dateline span');if(s[0])s[0].textContent=(d.meta.dateDisplay||'').toUpperCase();if(s[1])s[1].textContent=d.meta.location||'NORTH ALABAMA';if(s[2])s[2].textContent=d.meta.weather||'THE MORNING EDITION'}sports(d.sports);section('politics','II','Politics & Defense','Cross-spectrum coverage, bias noted, sources linked',d.politics);section('science','III','Science & Engineering','AI, materials, structures, thermal analysis & failures worth studying',d.science);section('exploration','IV','Exploration','Off the map, off the grid, off the planet',d.exploration);history(d.history,d.meta);diversions(d.diversions)}
+fetch(DATA_URL,{cache:'no-store'}).then(r=>r.ok?r.json():null).then(render).catch(()=>{});
 })();
-</script>
-</body>
+</script></body>
 </html>
