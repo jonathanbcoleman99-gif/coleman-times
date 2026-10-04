@@ -2,7 +2,11 @@ name: Build Coleman Times
 
 on:
   schedule:
-    - cron: '30 5 * * *'
+    # 10:30 UTC = 5:30 AM CDT
+    - cron: '30 10 * * *'
+    # 11:30 UTC = 5:30 AM CST
+    - cron: '30 11 * * *'
+
   workflow_dispatch:
 
 permissions:
@@ -21,6 +25,21 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Check Central Time
+        run: |
+          python - <<'PY'
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          now = datetime.now(ZoneInfo("America/Chicago"))
+
+          print("Central time:", now.strftime("%Y-%m-%d %H:%M:%S %Z"))
+
+          if now.hour != 5 or now.minute != 30:
+              print("Not the 5:30 AM Central run. Exiting.")
+              raise SystemExit(0)
+          PY
+
       - name: Build today's edition
         run: python scripts/build_edition.py
 
@@ -28,6 +47,9 @@ jobs:
         run: |
           git config user.name "Coleman Times Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add editions/latest.json comics/used comics/available
+
           git diff --cached --quiet || git commit -m "Publish daily Coleman Times"
+
           git push
