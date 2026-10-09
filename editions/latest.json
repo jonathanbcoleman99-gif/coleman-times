@@ -1,24 +1,14 @@
 {
-  "date": "2026-10-08",
-  "displayDate": "Thursday, October 8, 2026",
-  "contentDate": "2026-10-07",
+  "date": "2026-10-09",
+  "displayDate": "Friday, October 9, 2026",
+  "contentDate": "2026-10-08",
   "sports": [
     {
       "name": "Atlanta Braves",
       "sports": [
         {
           "name": "MLB",
-          "games": [
-            {
-              "away": "Los Angeles Dodgers",
-              "awayScore": "4",
-              "home": "Atlanta Braves",
-              "homeScore": "1",
-              "status": "Final",
-              "source": "ESPN",
-              "url": "https://www.espn.com/https://www.espn.com/mlb/game/_/gameId/401908016/dodgers-braves"
-            }
-          ],
+          "games": [],
           "standings": {
             "title": "MLB standings",
             "headers": [
@@ -262,6 +252,6 @@
       }
     ]
   },
-  "generatedAt": "2026-10-08T12:55:41.087704-05:00",
+  "generatedAt": "2026-10-09T12:08:29.968811-05:00",
   "generator": "Coleman Times free automation"
 }
