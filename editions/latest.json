@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-14",
-  "displayDate": "Wednesday, October 14, 2026",
-  "contentDate": "2026-10-13",
+  "date": "2026-10-15",
+  "displayDate": "Thursday, October 15, 2026",
+  "contentDate": "2026-10-14",
   "sports": [
     {
       "name": "Atlanta Braves",
@@ -252,6 +252,6 @@
       }
     ]
   },
-  "generatedAt": "2026-10-14T10:52:45.722356-05:00",
+  "generatedAt": "2026-10-15T10:15:56.216851-05:00",
   "generator": "Coleman Times free automation"
 }
