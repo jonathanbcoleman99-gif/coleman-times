@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-24",
-  "displayDate": "Tuesday, November 24, 2026",
-  "contentDate": "2026-11-23",
+  "date": "2026-11-25",
+  "displayDate": "Wednesday, November 25, 2026",
+  "contentDate": "2026-11-24",
   "sports": [
     {
       "name": "Atlanta Braves",
@@ -132,9 +132,17 @@
         },
         {
           "name": "Basketball",
-          "games": [],
-          "offSeason": true,
-          "offSeasonNote": "No game for this program yesterday. Meaningful developments are still monitored.",
+          "games": [
+            {
+              "away": "Texas Tech Red Raiders",
+              "awayScore": "64",
+              "home": "Louisville Cardinals",
+              "homeScore": "72",
+              "status": "Final",
+              "source": "ESPN",
+              "url": "https://www.espn.com/https://www.espn.com/mens-college-basketball/game/_/gameId/401915942/texas-tech-louisville"
+            }
+          ],
           "standings": {
             "title": "Basketball standings",
             "headers": [
@@ -252,6 +260,6 @@
       }
     ]
   },
-  "generatedAt": "2026-11-24T15:24:46.596125-06:00",
+  "generatedAt": "2026-11-25T14:03:52.249352-06:00",
   "generator": "Coleman Times free automation"
 }
